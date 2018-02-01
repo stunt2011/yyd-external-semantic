@@ -51,7 +51,7 @@ public class XunfeiSemanticService implements ExternalSemanticService{
 		}
 		
 		long start = System.currentTimeMillis();	
-		result = xunfeiWebApiTextUnderstand("main",text,userId);
+		result = xunfeiWebApiTextUnderstand("main",userId,text);
 		long total = System.currentTimeMillis() - start;
 		result.setTime(total);
 		

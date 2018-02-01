@@ -46,7 +46,7 @@ public class SanjiaoshouSemanticService implements ExternalSemanticService{
 		}
 		
 		long start = System.currentTimeMillis();		
-		result = getAnswer(text,userId);			
+		result = getAnswer(userId,text);			
 		long total = System.currentTimeMillis() - start;
 		result.setTime(total);
 		//三角兽统一定为闲聊
@@ -69,7 +69,7 @@ public class SanjiaoshouSemanticService implements ExternalSemanticService{
 	 * @param rid:暂时没限制，用户id，随便填,
 	 * @return
 	 */
-	private ExternalSemanticResult getAnswer(String question, String rid) {
+	private ExternalSemanticResult getAnswer(String rid,String question) {
 		ExternalSemanticResult semanticResult = new ExternalSemanticResult();
 		String result = null;
 		String answer = null;
