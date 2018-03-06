@@ -62,10 +62,7 @@ public class LingjuSemanticService implements ExternalSemanticService{
 		return result;
 	}
 	
-	@Override
-	public String  getToken(String userId,String userIp)throws Exception{
-		return getAccessToken(userId,userIp,null);
-	}
+	
 	
 	
 	public String getAuthcode() {
@@ -149,7 +146,7 @@ public class LingjuSemanticService implements ExternalSemanticService{
 	 * @param userid:用户ID,自由分配
 	 * @param userip：
 	 * @param question：问题
-	 * @return
+	 * @return,返回码111，122时需要申请acceccToken,111表示accessToken不存在，122表示accessToken过期
 	 */
 	public ExternalSemanticResult getAnswer(String userid, String userip, String token,String question) {
 		ExternalSemanticResult semanticResult = new ExternalSemanticResult();

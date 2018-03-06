@@ -57,12 +57,6 @@ public class SanjiaoshouSemanticService implements ExternalSemanticService{
 		return result;
 	}
 	
-	@Override
-	public String  getToken(String userId,String userIp)throws Exception{
-		return null;
-	}
-	
-	
 	/**
 	 * 
 	 * @param question:问题文本

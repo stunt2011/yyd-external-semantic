@@ -58,12 +58,6 @@ public class XunfeiSemanticService implements ExternalSemanticService{
 		return result;
 	}
 	
-		
-	@Override
-	public String  getToken(String userId,String userIp)throws Exception{
-		return null;
-	}
-	
 	/**
 	 * 迅飞语义：两个重要字段semantic 和answer字段,问答对类的(开放问答和自定义问答)一般没有semantic字段，技能类的一般会有semantic字段，可能没有answer字段
 	 * 
